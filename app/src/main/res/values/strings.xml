@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Github Profile Viewer</string>
+    <string name="userFullName">Full Name:</string>
+    <string name="userName">username:</string>
+    <string name="userId">User ID:</string>
+    <string name="accountType">Account Type:</string>
+    <string name="userSiteAdmin">Site Admin:</string>
+    <string name="userCompany">Company:</string>
+    <string name="blog">Blog:</string>
+    <string name="location">Location:</string>
+    <string name="email">Email:</string>
+    <string name="bio">Bio:</string>
+    <string name="noOfFollowers">Followers:</string>
+    <string name="noOfUsersFollowing">Following:</string>
+    <string name="noOfPublicRepos">Public Repos:</string>
+    <string name="noOfPublicGists">Public Gists:</string>
+    <string name="userCreated">Created at:</string>
+    <string name="userUpdated">Updated at:</string>
+    <string name="submit">Submit</string>
+    <string name="etUserNameHint">eg: rajbanshirahul</string>
+    <string name="labelTvUserName">username:</string>
+    <string name="tvUserNotFound">User not found! Please enter valid username.</string>
+    <string name="avatar_content_description">profile_avatar</string>
+
+</resources>

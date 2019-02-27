@@ -129,7 +129,11 @@ public class ViewerActivity extends AppCompatActivity {
                 while ((line = bufferedReader.readLine()) != null) {
                     buffer.append(line + "");
                 }
-
+                
+                // close the BufferedReader
+                if (bufferedReader != null) {
+                    bufferedReader.close();
+                }
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -139,13 +143,6 @@ public class ViewerActivity extends AppCompatActivity {
             } finally {
                 if (connection != null) {
                     connection.disconnect();
-                }
-                try {
-                    if (bufferedReader != null) {
-                        bufferedReader.close();
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
                 }
             }
 

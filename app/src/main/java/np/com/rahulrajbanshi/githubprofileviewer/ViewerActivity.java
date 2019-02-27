@@ -21,9 +21,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import javax.net.ssl.HttpsURLConnection;
 
 import np.com.rahulrajbanshi.githubprofileviewer.model.UserModel;
 
@@ -112,13 +113,13 @@ public class ViewerActivity extends AppCompatActivity {
         protected UserModel doInBackground(String... params) {
 
             BufferedReader bufferedReader = null;
-            HttpURLConnection connection = null;
+            HttpsURLConnection connection = null;
             StringBuffer buffer = null;
 
             try {
 
                 URL url = new URL(params[0]);
-                connection = (HttpURLConnection) url.openConnection();
+                connection = (HttpsURLConnection) url.openConnection();
                 connection.connect();
 
                 InputStream inputStream = connection.getInputStream();
